@@ -1,19 +1,13 @@
 // Defining express and routes
 const express = require("express");
+const DevController = require("./controllers/DevController");
+
 const routes = express.Router();
 
 // GET, POST, PUT, DELETE
 
-// GET:
-routes.get("/", (req, res) => {
-  const name = req.query.name;
-  return res.json({ message: `Hiho ${name}` });
-});
-
 // POST
-routes.post("/devs", (req, res) => {
-  return res.json({ ok: true });
-});
+routes.post("/devs", DevController.store);
 
 // Exporting routes
 module.exports = routes;
