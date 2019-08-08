@@ -1,0 +1,71 @@
+.main-container {
+  max-width: 61.25rem;
+  margin: 0 auto;
+  padding: 3.125rem 0;
+  text-align: center;
+}
+
+.main-container ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1.875rem;
+  margin-top: 3.125rem;
+}
+
+.main-container ul li {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-container ul li img {
+  max-width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+.main-container ul li footer {
+  flex: 1;
+  background: white;
+  border: 0.0625rem solid #eee;
+  padding: 0.25rem 1.25rem;
+  text-align: left;
+  border-radius: 0 0 5px 5px;
+}
+
+.main-container ul li footer strong {
+  font-size: 1rem;
+  color: #333;
+}
+
+.main-container ul li footer p {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #999;
+  margin-top: 0.3125rem;
+}
+
+.main-container ul li .buttons {
+  margin-top: 0.625rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0.625rem;
+}
+
+.main-container ul li .buttons button {
+  height: 3.125rem;
+  box-shadow: 0 0.125rem 0.125rem 0 rgba(0, 0, 0, 0.05);
+  border-radius: 0.25rem;
+  border: 0;
+  background: white;
+  cursor: pointer;
+}
+.main-container ul li .buttons button:hover img {
+  transform: translateY(-0.312rem);
+  transition: all 0.2s ease;
+}
+.main-container .empty {
+  font-size: 2rem;
+  color: #999;
+  font-weight: bold;
+  margin-top: 18.75rem;
+}

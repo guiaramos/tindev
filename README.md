@@ -68,7 +68,9 @@ This section should list any major frameworks that you built your project using.
 [![Nodemon][nodemon-shield]][nodemon-url]
 [![Insomnia][insomnia-shield]][insomnia-url]
 [![Mongoose][mongoose-shield]][mongoose-url]
-[cors][cors-url]
+[![React][React-shield]][React-url]
+[![Cors][Cors-shield]][Cors-url]
+
 
 <!-- GETTING STARTED -->
 
@@ -128,7 +130,7 @@ The first API was created to create de user database, at this step, the [Insomni
 
 Users table:
 Now, with the server settings ready, I created the first model that is charge to keep the users registration. The idea is to use the GitHub API to get the informations from the users, once the user have to have a GitHub account. The Schema was set as: name, user, bio and avatar.
-After some researchs, I created then the API connection inside the controller using [axios][axios-url] that execute the following:
+After some researchs, I created then the API connection inside the controller using [axios][axios-url] module to help execute the following:
 
 1. gets the user name from the app API.
 2. posts the user name on the GitHub API.
@@ -140,7 +142,16 @@ Also, after some tests, I have implemented a if conditions to avoid the creating
 Like and Dislikes:
 I created 2 fields on each user registration where I can add the MongoDB ID of each user that liked or disliked. On this way, I also created 3 new API methods to post the like and dislikes and also to get the users who have not interacted yet.
 
-Also, after some researchs, I figured out that MongoDB could block access to React, therefore I have connected the [cors][cors-url] module to allow this connection
+Also, after some researchs, I figured out that MongoDB could block access to React, therefore I have connected the module to allow this connection
+
+Frontend;
+Webapp:
+With [React][React-url] I start the web app frontend and UI development.
+
+The login page was very simple and easy to develop, as soon as the user insert the GitHub username to log in the connection with the API for the database starts, again with [axios][axios-url], it regirsters the user/or retreive the info of the existent user. I decided to create a separated file on services folder for the main API address and another for the routes.
+
+The main page is loaded after the user log in, I created the styles with grid of 3 per row for the cards with the picture, name, bio and button for like or dislike. 
+At this moment, I had to use the new APIs from [React][React-url]: useEffect and useState to handle the cards  creation and reload of the card list.
 
 <!-- CONTRIBUTING -->
 
