@@ -68,9 +68,9 @@ This section should list any major frameworks that you built your project using.
 [![Nodemon][nodemon-shield]][nodemon-url]
 [![Insomnia][insomnia-shield]][insomnia-url]
 [![Mongoose][mongoose-shield]][mongoose-url]
-[![React][React-shield]][React-url]
-[![Cors][Cors-shield]][Cors-url]
-
+[![React][react-shield]][react-url]
+[![Cors][cors-shield]][cors-url]
+[![JavaFX][javafx-shield]][javafx-url]
 
 <!-- GETTING STARTED -->
 
@@ -144,14 +144,17 @@ I created 2 fields on each user registration where I can add the MongoDB ID of e
 
 Also, after some researchs, I figured out that MongoDB could block access to React, therefore I have connected the module to allow this connection
 
-Frontend;
+Frontend
 Webapp:
-With [React][React-url] I start the web app frontend and UI development.
+With [React][react-url] I start the web app frontend and UI development.
 
 The login page was very simple and easy to develop, as soon as the user insert the GitHub username to log in the connection with the API for the database starts, again with [axios][axios-url], it regirsters the user/or retreive the info of the existent user. I decided to create a separated file on services folder for the main API address and another for the routes.
 
-The main page is loaded after the user log in, I created the styles with grid of 3 per row for the cards with the picture, name, bio and button for like or dislike. 
-At this moment, I had to use the new APIs from [React][React-url]: useEffect and useState to handle the cards  creation and reload of the card list.
+The main page is loaded after the user log in, I created the styles with grid of 3 per row for the cards with the picture, name, bio and button for like or dislike.
+At this moment, I had to use the new APIs from [React][react-url]: useEffect and useState to handle the cards creation and reload of the card list.
+
+Mobile:
+Developed with React-Native, the app has the similarities of the webapp. there are some changes on the scripts for like and dislike in reason to adapt for [JavaFX][javafx-url]. Tindev is available on Android and iOS.
 
 <!-- CONTRIBUTING -->
 
