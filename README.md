@@ -71,6 +71,7 @@ This section should list any major frameworks that you built your project using.
 [![React][react-shield]][react-url]
 [![Cors][cors-shield]][cors-url]
 [![JavaFX][javafx-shield]][javafx-url]
+[![WebSocket.io][websocket-shield]][websocket-url]
 
 <!-- GETTING STARTED -->
 
@@ -156,6 +157,9 @@ At this moment, I had to use the new APIs from [React][react-url]: useEffect and
 Mobile:
 Developed with React-Native, the app has the similarities of the webapp. there are some changes on the scripts for like and dislike in reason to adapt for [JavaFX][javafx-url]. Tindev is available on Android and iOS.
 
+Live Match:
+By the end of the project I added the live feacture of match, using [WebSocket.io][websocket-url] when two Dev liked each other.
+
 <!-- CONTRIBUTING -->
 
 ## Contributing
@@ -200,6 +204,24 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
+[mongodb-shield]:
+[mongodb-url]:
+[express-shield]:
+[express-url]:
+[nodemon-shield]:
+[nodemon-url]:
+[insomnia-shield]:
+[insomnia-url]:
+[mongoose-shield]:
+[mongoose-url]:
+[react-shield]:
+[react-url]:
+[cors-shield]:
+[cors-url]:
+[javafx-shield]:
+[javafx-url]:
+[websocket-shield]:
+[websocket-url]:
 [license-shield]: https://img.shields.io/github/license/guiaramos/Best-README-Template.svg?style=flat-square
 [requests-shield]: https://img.shields.io/badge/Requests-python_framework-red.svg?logo=Python
 [beautifulsoup-shield]: https://img.shields.io/badge/Beautiful_Soup-python_framework-red.svg?logo=Python
