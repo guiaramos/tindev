@@ -1,18 +1,17 @@
 <!-- PROJECT SHIELDS -->
 
-[![Build Status][build-shield]]()
 [![Contributors][contributors-shield]]()
 [![LinkedIn][linkedin-shield]][linkedin-url]
-[![MIT License][license-shield]][license-url]
 
 <!-- PROJECT LOGO -->
 <br />
+
 <p align="center">
 
   <h3 align="center">Tindev</h3>
-
+  <img style="text-align:center" src="frontend/src/assets/logo-tindev.svg" alt="Tindev">
   <p align="center">
-    ..Description
+    A social network for developers.
     <br />
     <a href="https://github.com/guiaramos/tindev"><strong>Explore the docs »</strong></a>
     <br />
@@ -63,15 +62,18 @@ A list of commonly used resources that I find helpful are listed in the acknowle
 
 This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
+[![React Native][reactnative-shield]][reactnative-url]
+
+[![React][react-shield]][react-url]
+[![WebSocket.io][websocket-shield]][websocket-url]
+[![JSX][jsx-shield]][jsx-url]
+
 [![MongoDB Atlas][mongodb-shield]][mongodb-url]
 [![Express][express-shield]][express-url]
 [![Nodemon][nodemon-shield]][nodemon-url]
 [![Insomnia][insomnia-shield]][insomnia-url]
 [![Mongoose][mongoose-shield]][mongoose-url]
-[![React][react-shield]][react-url]
 [![Cors][cors-shield]][cors-url]
-[![JavaFX][javafx-shield]][javafx-url]
-[![WebSocket.io][websocket-shield]][websocket-url]
 
 <!-- GETTING STARTED -->
 
@@ -124,41 +126,41 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 ## Roadmap
 
 Backend:
-The first step of this project, the server uses [Express][express-url] for the connection with the apps and [Nodemon][nodemon-url] to automate the refresher while changes occurs.
+The first step of this project, the server uses [Express][express-url] for the connection with the apps and [Nodemon][nodemon-url] to automate the refresher while changes occur.
 
 Server creation:
-The first API was created to create de user database, at this step, the [Insomnia][insomnia-url] desk app took place to help debugging the API. After some tests I finally reached out a good model for connecting the with the [MongoDB Atlas][mongodb-url]. Then, thanks to [Mongoose][mongoose-url] that helped to keep the communication with server simple, I created the structure for the backend, after some researches, being segregated in: model, controllers and view. At this moment, I also realized that the server.js was getting messy, therefore, I segregated the "routes" in another file.
+The first API was created to create de user database, at this step, the [Insomnia][insomnia-url] desk app took place to help to debug the API. After some tests, I finally reached out a good model for connecting the with the [MongoDB Atlas][mongodb-url]. Then, thanks to [Mongoose][mongoose-url] that helped to keep the communication with server simple, I created the structure for the backend, after some researches, being segregated in: model, controllers, and view. At this moment, I also realized that the server.js was getting messy, therefore, I segregated the "routes" in another file.
 
 Users table:
-Now, with the server settings ready, I created the first model that is charge to keep the users registration. The idea is to use the GitHub API to get the informations from the users, once the user have to have a GitHub account. The Schema was set as: name, user, bio and avatar.
-After some researchs, I created then the API connection inside the controller using [axios][axios-url] module to help execute the following:
+Now, with the server settings ready, I created the first model that keeps the user's registration. The idea is to use the GitHub API to get the information from the users, once the user has to have a GitHub account. The Schema was set as name, user, bio and avatar.
+After some research, I created then the API connection inside the controller using [axios][axios-url] module to help execute the following:
 
 1. gets the user name from the app API.
 2. posts the user name on the GitHub API.
-3. saves the necessary information on specific variable.
+3. saves the necessary information on a specific variable.
 4. posts variable on the database constructor.
 
-Also, after some tests, I have implemented a if conditions to avoid the creating same user on the table.
+Also, after some tests, I have implemented and if conditions to avoid creating the same user on the table.
 
-Like and Dislikes:
+Likes and Dislikes:
 I created 2 fields on each user registration where I can add the MongoDB ID of each user that liked or disliked. On this way, I also created 3 new API methods to post the like and dislikes and also to get the users who have not interacted yet.
 
-Also, after some researchs, I figured out that MongoDB could block access to React, therefore I have connected the module to allow this connection
+Also, after some research, I figured out that MongoDB could block access to React, therefore I have connected the module to allow this connection
 
 Frontend
 Webapp:
 With [React][react-url] I start the web app frontend and UI development.
 
-The login page was very simple and easy to develop, as soon as the user insert the GitHub username to log in the connection with the API for the database starts, again with [axios][axios-url], it regirsters the user/or retreive the info of the existent user. I decided to create a separated file on services folder for the main API address and another for the routes.
+The login page was very simple and easy to develop, as soon as the user inserts the GitHub username to log in the connection with the API for the database starts, again with [axios][axios-url], it registers the user/or retrieve the info of the existent user. I decided to create a separated file on services folder for the main API address and another for the routes.
 
-The main page is loaded after the user log in, I created the styles with grid of 3 per row for the cards with the picture, name, bio and button for like or dislike.
-At this moment, I had to use the new APIs from [React][react-url]: useEffect and useState to handle the cards creation and reload of the card list.
+The main page is loaded after the user logs in, I created the styles with a grid of 3 per row for the cards with the picture, name, bio, and button for like or dislike.
+At this moment, I had to use the new APIs from [React][react-url]: useEffect and useState to handle the creation of the card and reload of the card list.
 
 Mobile:
-Developed with React-Native, the app has the similarities of the webapp. there are some changes on the scripts for like and dislike in reason to adapt for [JavaFX][javafx-url]. Tindev is available on Android and iOS.
+Developed with React-Native, the app has the similarities of the web app. there are some changes on the scripts for like and dislike in reason to adapt for [JavaFX][javafx-url]. Tindev is available on Android and iOS.
 
 Live Match:
-By the end of the project I added the live feacture of match, using [WebSocket.io][websocket-url] when two Dev liked each other.
+By the end of the project, I added the live feature of the match, using [WebSocket.io][websocket-url] when two Dev liked each other.
 
 <!-- CONTRIBUTING -->
 
@@ -204,24 +206,26 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[mongodb-shield]:
-[mongodb-url]:
-[express-shield]:
-[express-url]:
-[nodemon-shield]:
-[nodemon-url]:
-[insomnia-shield]:
-[insomnia-url]:
-[mongoose-shield]:
-[mongoose-url]:
-[react-shield]:
-[react-url]:
-[cors-shield]:
-[cors-url]:
-[javafx-shield]:
-[javafx-url]:
-[websocket-shield]:
-[websocket-url]:
+[mongodb-shield]: https://img.shields.io/badge/MongoDB-database-red.svg?logo=MongoDB
+[mongodb-url]: https://www.mongodb.com/what-is-mongodb
+[express-shield]: https://img.shields.io/badge/Express-framework-red.svg?logo=JavaScript
+[express-url]: https://expressjs.com/
+[nodemon-shield]: https://img.shields.io/badge/Nodemon-auto--reload-red.svg?logo=Nodemon
+[nodemon-url]: https://nodemon.io/
+[insomnia-shield]: https://img.shields.io/badge/Insomnia-API--debug-red.svg?logo=Apple
+[insomnia-url]: https://insomnia.rest/
+[mongoose-shield]: https://img.shields.io/badge/Mongoose-Object--Modeling-red.svg?logo=MongoDB
+[mongoose-url]: https://mongoosejs.com/
+[react-shield]: https://img.shields.io/badge/React.js-front--end-blue.svg?logo=React
+[react-url]: https://reactjs.org/
+[cors-shield]: https://img.shields.io/badge/CORS-auto--reload-red.svg?logo=Node.js
+[cors-url]: https://www.npmjs.com/package/cors
+[jsx-shield]: https://img.shields.io/badge/JSX-front--end-blue.svg?logo=React
+[jsx-url]: https://reactjs.org/docs/introducing-jsx.html
+[websocket-shield]: https://img.shields.io/badge/Socket.io-front--end-blue.svg?logo=JavaScript
+[websocket-url]: https://socket.io/
+[reactnative-shield]: https://img.shields.io/badge/React--Native-mobile-purple.svg?logo=React
+[reactnative-url]: https://facebook.github.io/react-native/
 [license-shield]: https://img.shields.io/github/license/guiaramos/Best-README-Template.svg?style=flat-square
 [requests-shield]: https://img.shields.io/badge/Requests-python_framework-red.svg?logo=Python
 [beautifulsoup-shield]: https://img.shields.io/badge/Beautiful_Soup-python_framework-red.svg?logo=Python
@@ -281,4 +285,5 @@ Distributed under the MIT License. See `LICENSE` for more information.
 [time-url]: https://docs.python.org/3/library/time.html
 [pandas-url]: https://pandas.pydata.org/
 [license-url]: https://github.com/guiaramos/Best-README-Template/blob/master/LICENSE.txt
-[product-screenshot]: img/project.png
+[product-screenshot]: frontend/src/assets/itsamatch.png
+[logo-screenshot]: frontend/src/assets/logo-tindev.svg
