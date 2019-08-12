@@ -5,11 +5,11 @@
 
 <!-- PROJECT LOGO -->
 <br />
-
-<p align="center">
+<div style="text-align:center">
+<p>
 
   <h3 align="center">Tindev</h3>
-  <img style="text-align:center" src="frontend/src/assets/logo-tindev.svg" alt="Tindev">
+  <img src="frontend/src/assets/logo-tindev.svg" alt="Tindev">
   <p align="center">
     A social network for developers.
     <br />
@@ -23,6 +23,7 @@
     <a href="https://github.com/guiaramos/tindev/issues">Request Feature</a>
   </p>
 </p>
+</div>
 
 <!-- TABLE OF CONTENTS -->
 
@@ -36,7 +37,6 @@
 - [Usage](#usage)
 - [Roadmap](#roadmap)
 - [Contributing](#contributing)
-- [License](#license)
 - [Contact](#contact)
 - [Acknowledgements](#acknowledgements)
 
@@ -46,21 +46,13 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need.
+The social network made for all developers. This project was built for the Omnistack 8.0 of [Rocketseat](https://rocketseat.com.br/). The project is focused on the MERN stack, and the challenge is to build a web app and mobile app.
 
-Here's why:
-
-- Your time should be focused on creating something amazing. A project that solves a problem and helps others
-- You shouldn't be doing the same tasks over and over like creating a README from scratch
-- You should element DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue.
-
-A list of commonly used resources that I find helpful are listed in the acknowledgements.
+The app has features such as live match with [Socket.io][websocket-url]. Also is available on Android and iOS due to [React Native][reactnative-url].
 
 ### Built With
 
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+This is the list of the tech stack:
 
 [![React Native][reactnative-shield]][reactnative-url]
 
@@ -79,12 +71,11 @@ This section should list any major frameworks that you built your project using.
 
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+To getting start you need a GitHub account and input it on log-ing page.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
+This is the prerequisites to run the project locally:
 
 - npm
 
@@ -94,32 +85,23 @@ npm install npm@latest -g
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
 
 ```sh
-git clone https:://github.com/your_username_/Project-Name.git
+git clone https://github.com/guiaramos/tindev.git
 ```
 
-3. Install NPM packages
+2. Install NPM packages
 
 ```sh
 npm install
-```
-
-4. Enter your API in `config.js`
-
-```JS
-const API_KEY = 'ENTER YOUR API';
 ```
 
 <!-- USAGE EXAMPLES -->
 
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
+This app is can be used similiar as Tinder, where you can like or dislike the other devs and receive a Match information.
 
 <!-- ROADMAP -->
 
@@ -174,12 +156,6 @@ Contributions are what make the open source community such an amazing place to b
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-<!-- LICENSE -->
-
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
 <!-- CONTACT -->
 
 ## Contact
@@ -191,17 +167,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Acknowledgements
 
-- [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-- [Img Shields](https://shields.io)
-- [Choose an Open Source License](https://choosealicense.com)
-- [GitHub Pages](https://pages.github.com)
-- [Animate.css](https://daneden.github.io/animate.css)
-- [Loaders.css](https://connoratherton.com/loaders)
-- [Slick Carousel](https://kenwheeler.github.io/slick)
-- [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
-- [Sticky Kit](http://leafo.net/sticky-kit)
-- [JVectorMap](http://jvectormap.com)
-- [Font Awesome](https://fontawesome.com)
+- [OmniStack 8.0](https://rocketseat.com.br/week-8/inscricao)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
